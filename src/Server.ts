@@ -10,7 +10,7 @@ import * as rest from "./controllers/rest/index.js";
 @Configuration({
   ...config,
   acceptMimes: ["application/json"],
-  httpPort: process.env.PORT || 8083,
+  httpPort: process.env.PORT,
   httpsPort: false, // CHANGE
   mount: {
     "/rest": [
